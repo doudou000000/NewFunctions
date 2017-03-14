@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cpf.com.testlauncher.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:text="测试ConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="5dp"
+                android:id="@+id/button2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:text="测试CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button2"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:text="测试RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                app:layout_constraintRight_toRightOf="@+id/button2"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button3"
+                app:layout_constraintLeft_toLeftOf="@+id/button2" />
+
+            <Button
+                android:text="测试FloatingActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                app:layout_constraintRight_toRightOf="@+id/button3"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button4"
+                app:layout_constraintLeft_toLeftOf="@+id/button3" />
+
+            <Button
+                android:text="测试TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6"
+                app:layout_constraintRight_toRightOf="@+id/button4"
+                app:layout_constraintLeft_toLeftOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <Button
+                android:text="测试TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button7"
+                app:layout_constraintRight_toRightOf="@+id/button5"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button6"
+                app:layout_constraintLeft_toLeftOf="@+id/button5" />
+
+            <Button
+                android:text="测试NavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button8"
+                app:layout_constraintRight_toRightOf="@+id/button6"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button7"
+                app:layout_constraintLeft_toLeftOf="@+id/button6" />
+
+            <Button
+                android:text="测试CollapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button13"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/button8"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:text="测试Snackbar和Palette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button14"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            <Button
+                android:text="测试Android Studio开发ndk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_ndk_btn"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            <Button
+                android:text="测试Android开发框架"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_ormlite_btn"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            <Button
+                android:text="测试Android开发IM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_im_btn"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            <Button
+                android:text="测试Android开发自定义view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_custom_view_btn"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            <Button
+                android:text="测试图片图像处理"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_photo_image_btn"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+            </LinearLayout>
+</ScrollView>

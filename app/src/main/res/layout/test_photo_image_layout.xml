@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="cpf.com.testlauncher.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片图像处理"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textSize="40dp"/>
+
+    <Button
+        android:text="调用Android_colorMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="useAPIColorMatrix"
+        android:id="@+id/test_api_colorMatrix_btn" />
+    <Button
+        android:text="使用颜色矩阵"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="useColorMatrix"
+        android:id="@+id/test_color_matrix_btn" />
+
+    <Button
+        android:text="使用像素"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="useColorPelix"
+        android:id="@+id/test_color_pelix_btn" />
+
+</LinearLayout>

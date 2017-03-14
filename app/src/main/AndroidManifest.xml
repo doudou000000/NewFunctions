@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cpf.com.testlauncher">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".MyApplication"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom_view.TestPathActivity">
+        </activity>
+        <activity android:name=".TestNewFunctionActivity">
+        </activity>
+        <activity android:name=".TestContraintLayout">
+        </activity>
+        <activity android:name=".TestCardViewActivity">
+        </activity>
+        <activity android:name=".TestFloatingActionButtonActivity">
+        </activity>
+        <activity android:name=".TestOtherActivity">
+        </activity>
+        <activity android:name=".TestTextIputLayoutActivity">
+        </activity>
+        <activity android:name=".tab_layout.TestTabLayoutActivity">
+        </activity>
+        <activity android:name=".TestNavigationViewActivity">
+        </activity>
+        <activity android:name=".TestCollapsingToolBarLayout">
+        </activity>
+        <activity android:name=".test_ndk.TestNDKActivity">
+        </activity>
+        <activity android:name=".TestRecycleViewActivity">
+    </activity>
+        <activity android:name=".test_im.TestIMActivity">
+        </activity>
+        <activity android:name=".ResultActivity">
+        </activity>
+        <activity android:name=".test_vollery.TestVolleryActivity">
+        </activity>
+        <activity android:name=".test_vollery.TestVolleryFrameActivity">
+        </activity>
+        <activity android:name=".custom_view.TestCustomViewActivity">
+        </activity>
+        <activity android:name=".custom_view.TestCustomCircleActivity">
+        </activity>
+        <activity android:name=".custom_view.TestCustomCodeActivity">
+        </activity>
+        <activity android:name=".custom_view.TestCustomWidghtViewActivity">
+        </activity>
+        <activity android:name=".custom_view.TestCustomEditextActivity">
+        </activity>
+        <activity android:name=".custom_view.TestBezierActivity">
+        </activity>
+        <activity android:name=".custom_view.TestWaveActivity">
+        </activity>
+        <activity android:name=".hanle_img.TestPhotoImageActivity">
+        </activity>
+        <activity android:name=".hanle_img.TestAPIColorMatrixActivity">
+        </activity>
+        <activity android:name=".hanle_img.TestColorMatrixActivity">
+        </activity>
+        <activity android:name=".hanle_img.TestPixelHandleImgActivity">
+        </activity>
+    </application>
+
+</manifest>

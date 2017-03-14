@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="cpf.com.testlauncher.MainActivity">
+
+
+    <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/test_im_username_et"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/test_im_username_tv"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPassword"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/test_im_password_et"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/test_im_username_et"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/test_im_password_tv" />-->
+
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/test_im_username_tv"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/test_im_username_et"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/test_im_username_et"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent" />-->
+
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/test_im_password_tv"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/test_im_password_et"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/test_im_password_et" />-->
+
+    <!--<Button-->
+        <!--android:text="Button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteX="226dp"-->
+        <!--android:id="@+id/test_im_login_btn"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/test_im_password_et" />-->
+
+    <!--<Button-->
+        <!--android:text="Button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/test_im_regist_btn"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/test_im_login_btn"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/test_im_login_btn"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/test_im_login_btn"-->
+        <!--android:layout_marginEnd="32dp" />-->
+
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteY="404dp"-->
+        <!--android:id="@+id/textView"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--android:layout_marginStart="16dp" />-->
+
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteY="471dp"-->
+        <!--android:id="@+id/textView2"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent" />-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="278dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteY="388dp"-->
+        <!--tools:layout_editor_absoluteX="106dp">-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="hint" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+        <TextView
+            android:text="@string/test_im_unsername"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_im_username_tv" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/test_im_username_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+        <TextView
+            android:text="@string/test_im_password"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_im_password_tv" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/test_im_password_til"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dip"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+        android:text="@string/test_im_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_im_login_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp" />
+        <Button
+            android:text="发送消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_im_send_msg_btn"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp" />
+        <Button
+        android:text="@string/test_im_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_im_regist_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp" />
+    </RelativeLayout>
+</LinearLayout>

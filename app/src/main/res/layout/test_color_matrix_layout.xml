@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cpf.com.testlauncher.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:id="@+id/test_color_matrix_img" />
+
+    <GridLayout
+        android:id="@+id/test_color_matrix_gl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:rowCount="4"
+        android:columnCount="5"
+        android:layout_weight="1">
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/test_color_matrix_img_chage_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeImgColorMatrix"
+            android:text="change"/>
+        <Button
+            android:id="@+id/test_color_matrix_img_reset_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="resetImgColorMatrix"
+            android:text="reset"/>
+    </LinearLayout>
+</LinearLayout>

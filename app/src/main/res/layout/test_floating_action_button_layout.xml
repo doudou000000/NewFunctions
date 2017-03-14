@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@android:color/holo_blue_dark"
+        app:cardCornerRadius="16dp"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="你好！我是floatingActionButton。\nFloatingActionButton（FAB） 是 Android 5.0 新特性——Material Design 中的一个控件，是一种悬浮的按钮。\n
+FloatingActionButton 是 ImageView 的子类，因此它具备ImageView的全部属性。\n
+FloatingActionButton 结合 CoordinatorLayout 使用，即可实现悬浮在任意控件的任意位置。\n
+使用 FloatingActionButton 的难点主要是布局，其在JAVA代码中的用法和普通的 ImageView 基本相同。\n
+基本属性：\n
+android:src：FAB中显示的图标，最好是24dp的\n
+app:backgroundTint：正常的背景颜色\n
+app:rippleColor：按下时的背景颜色\n
+app:elevation：正常的阴影大小\n
+app:pressedTranslationZ：按下时的阴影大小\n
+app:layout_anchor：设置FAB的锚点，即以哪个控件为参照设置位置\n
+app:layout_anchorGravity：FAB相对于锚点的位置\n
+app:fabSize：FAB的大小，normal或mini（对应56dp和40dp）\n
+注意：要想让FAB显示点击后的颜色和阴影变化效果，必须设置onClick事件"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20.0dip"
+        android:src="@drawable/add_red"
+        app:borderWidth="0.0dip"
+        app:elevation="5.0dip"
+        app:fabSize="normal"
+        android:clickable="true"
+        app:layout_anchor="@id/con"
+        app:layout_anchorGravity="right|bottom"
+        app:pressedTranslationZ="10.0dip"
+        app:rippleColor="#a6a6a6" />
+
+</android.support.design.widget.CoordinatorLayout>

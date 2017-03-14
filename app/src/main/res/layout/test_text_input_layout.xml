@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="cpf.com.testlauncher.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1、app:passwordToggleEnabled：是否显示可以查看密码的Toggle按钮\n2、app:passwordToggleDrawable：查看密码的Toggle按钮的图片\n注：只有当包裹的EditText或TextInputEditText的InputType是密码格式时才会显示这个图标\n3、app:counterEnabled：是否显示文本长度计数器\n4、app:counterMaxLength：文本长度计数器的最大长度\n注：文本长度计数器就是在输入框的右下角显示“X/Y”字样，X表示当前输入框中的文本长度，Y表示规定的输入长度.如果用户输入的长度超过Y，则文本计数器中的文本会变色提示 "
+            android:textSize="15sp"
+            android:textColor="#333333"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

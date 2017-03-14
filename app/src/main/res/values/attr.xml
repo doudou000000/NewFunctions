@@ -1,0 +1,35 @@
+<resources>
+
+  <declare-styleable name="custom_code_view">
+
+      <attr name="textSise" format="dimension"></attr>
+      <attr name="textColor" format="color"></attr>
+      <attr name="text" format="string"></attr>
+
+  </declare-styleable>
+
+    <declare-styleable name="custom_view">
+
+        <attr name="title" format="string"></attr>
+        <attr name="titleSize" format="dimension"></attr>
+        <attr name="titleColor" format="color"></attr>
+
+        <attr name="leftButtonText" format="string"></attr>
+        <attr name="leftButtonBackground" format="reference|color"></attr>
+        <attr name="leftButtonTextColor" format="color"></attr>
+
+        <attr name="rightButtonText" format="string"></attr>
+        <attr name="rightButtonBackground" format="reference|color"></attr>
+        <attr name="rightButtonTextColor" format="color"></attr>
+        
+        
+    </declare-styleable>
+
+    <declare-styleable name="custom_eidtext_view">
+
+        <attr name="eidtextSise" format="dimension"></attr>
+        <attr name="eidtextColor" format="color"></attr>
+
+    </declare-styleable>
+
+</resources>

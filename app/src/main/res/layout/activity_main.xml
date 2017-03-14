@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cpf.com.testlauncher.MainActivity">
+
+    <Button
+        android:text="贝塞尔曲线"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+    <Button
+        android:text="Android5.0新特新"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_android_new_function_btn" />
+
+    <GridView
+        android:id="@+id/app_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"/>
+</LinearLayout>

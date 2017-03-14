@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?> <UploadApplyResponse Status="500">  <UploadCode />  <Error>org.jdom.input.JDOMParseException: Error on line 1: Content is not allowed in prolog.</Error>  <Message>Failed</Message> </UploadApplyResponse>

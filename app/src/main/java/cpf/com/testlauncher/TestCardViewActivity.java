@@ -1,0 +1,16 @@
+package cpf.com.testlauncher;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+/**
+ * Created by Administrator on 2017/2/10.
+ */
+public class TestCardViewActivity extends Activity{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.test_card_view_layout);
+    }
+}
