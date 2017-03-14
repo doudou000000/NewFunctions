@@ -19,7 +19,7 @@ import cpf.com.testlauncher.test_vollery.TestVolleryActivity;
  */
 public class TestNewFunctionActivity extends Activity implements View.OnClickListener {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,ndkBtn,imBtn,volleryBtn,custom_view_btn,photo_image_btn;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,ndkBtn,imBtn,volleryBtn,custom_view_btn,photo_image_btn,animatorBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,7 @@ public class TestNewFunctionActivity extends Activity implements View.OnClickLis
         volleryBtn = (Button)findViewById(R.id.test_ormlite_btn);
         custom_view_btn = (Button)findViewById(R.id.test_custom_view_btn);
         photo_image_btn = (Button)findViewById(R.id.test_photo_image_btn);
+        animatorBtn = (Button)findViewById(R.id.test_animator_btn);
     }
 
     private void initListener() {
@@ -65,6 +66,7 @@ public class TestNewFunctionActivity extends Activity implements View.OnClickLis
         volleryBtn.setOnClickListener(this);
         custom_view_btn.setOnClickListener(this);
         photo_image_btn.setOnClickListener(this);
+        animatorBtn.setOnClickListener(this);
     }
 
     @Override
@@ -112,6 +114,9 @@ public class TestNewFunctionActivity extends Activity implements View.OnClickLis
                 break;
             case R.id.test_photo_image_btn:
                 switch2activity(TestPhotoImageActivity.class);
+                break;
+            case R.id.test_animator_btn:
+                switch2activity(TestAnimatorActivity.class);
                 break;
             default:
                 break;
