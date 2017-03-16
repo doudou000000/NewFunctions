@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right|bottom"
+    tools:context="cpf.com.testlauncher.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/test_animator_menu_item_a_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_cake_36pt"/>
+    <ImageView
+        android:id="@+id/test_animator_menu_item_b_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_domain_36pt"/>
+    <ImageView
+        android:id="@+id/test_animator_menu_item_c_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_group_36pt"/>
+    <ImageView
+        android:id="@+id/test_animator_menu_item_d_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_mood_36pt"/>
+    <ImageView
+        android:id="@+id/test_animator_menu_item_e_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_share_36pt"/>
+
+    <ImageView
+        android:id="@+id/test_animator_menu_item_f_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_red"/>
+
+</RelativeLayout>

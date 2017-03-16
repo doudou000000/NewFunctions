@@ -1,6 +1,7 @@
 package cpf.com.testlauncher;
 
 import android.app.Application;
+import android.view.WindowManager;
 
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.XMPPConnection;
@@ -14,6 +15,12 @@ public class MyApplication extends Application {
 
     private String username = "test1";
     private String password = "123456";
+
+    private WindowManager.LayoutParams params = new WindowManager.LayoutParams();
+
+    public WindowManager.LayoutParams getWindowParams(){
+        return params;
+    }
 
     public static XMPPTCPConnection connection;
 

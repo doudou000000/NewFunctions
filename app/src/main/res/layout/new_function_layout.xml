@@ -155,5 +155,15 @@
                 app:layout_constraintTop_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
+            <Button
+                android:text="测试Pull2Refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_pull2refresh_btn"
+                android:layout_marginTop="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
             </LinearLayout>
 </ScrollView>

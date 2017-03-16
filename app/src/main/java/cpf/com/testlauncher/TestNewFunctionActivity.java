@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import cpf.com.testlauncher.animator.TestAnimatorActivity;
 import cpf.com.testlauncher.custom_view.TestCustomViewActivity;
 import cpf.com.testlauncher.hanle_img.TestPhotoImageActivity;
 import cpf.com.testlauncher.tab_layout.TestTabLayoutActivity;
 import cpf.com.testlauncher.test_im.TestIMActivity;
 import cpf.com.testlauncher.test_ndk.TestNDKActivity;
+import cpf.com.testlauncher.test_pull2refresh.TestPull2RefreshActivity;
 import cpf.com.testlauncher.test_vollery.TestVolleryActivity;
 
 /**
@@ -19,7 +21,7 @@ import cpf.com.testlauncher.test_vollery.TestVolleryActivity;
  */
 public class TestNewFunctionActivity extends Activity implements View.OnClickListener {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,ndkBtn,imBtn,volleryBtn,custom_view_btn,photo_image_btn,animatorBtn;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,ndkBtn,imBtn,volleryBtn,custom_view_btn,photo_image_btn,animatorBtn,pull2refreshBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class TestNewFunctionActivity extends Activity implements View.OnClickLis
         custom_view_btn = (Button)findViewById(R.id.test_custom_view_btn);
         photo_image_btn = (Button)findViewById(R.id.test_photo_image_btn);
         animatorBtn = (Button)findViewById(R.id.test_animator_btn);
+        pull2refreshBtn = (Button)findViewById(R.id.test_pull2refresh_btn);
     }
 
     private void initListener() {
@@ -67,6 +70,7 @@ public class TestNewFunctionActivity extends Activity implements View.OnClickLis
         custom_view_btn.setOnClickListener(this);
         photo_image_btn.setOnClickListener(this);
         animatorBtn.setOnClickListener(this);
+        pull2refreshBtn.setOnClickListener(this);
     }
 
     @Override
@@ -117,6 +121,9 @@ public class TestNewFunctionActivity extends Activity implements View.OnClickLis
                 break;
             case R.id.test_animator_btn:
                 switch2activity(TestAnimatorActivity.class);
+                break;
+            case R.id.test_pull2refresh_btn:
+                switch2activity(TestPull2RefreshActivity.class);
                 break;
             default:
                 break;
