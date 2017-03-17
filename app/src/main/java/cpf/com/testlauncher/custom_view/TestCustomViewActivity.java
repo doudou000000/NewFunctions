@@ -13,7 +13,7 @@ import cpf.com.testlauncher.R;
  */
 public class TestCustomViewActivity extends Activity implements View.OnClickListener {
 
-    Button circleBtn,codeBtn,topbarBtn,editextBtn,bezierBtn,waveBtn;
+    Button circleBtn,codeBtn,topbarBtn,editextBtn,bezierBtn,waveBtn,circleWaveBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,8 @@ public class TestCustomViewActivity extends Activity implements View.OnClickList
         editextBtn = (Button)findViewById(R.id.test_custom_editext_btn);
         bezierBtn = (Button)findViewById(R.id.test_bezier_btn);
         waveBtn = (Button)findViewById(R.id.test_wave_btn);
-//        btn4 = (Button)findViewById(R.id.button5);
+        circleWaveBtn = (Button)findViewById(R.id.test_cicle_wave_btn);
+
 //        btn5 = (Button)findViewById(R.id.button6);
 //        btn6 = (Button)findViewById(R.id.button7);
 //        btn7 = (Button)findViewById(R.id.button8);
@@ -53,7 +54,7 @@ public class TestCustomViewActivity extends Activity implements View.OnClickList
         editextBtn.setOnClickListener(this);
         bezierBtn.setOnClickListener(this);
         waveBtn.setOnClickListener(this);
-//        btn4.setOnClickListener(this);
+        circleWaveBtn.setOnClickListener(this);
 //        btn5.setOnClickListener(this);
 //        btn6.setOnClickListener(this);
 //        btn7.setOnClickListener(this);
@@ -87,9 +88,9 @@ public class TestCustomViewActivity extends Activity implements View.OnClickList
             case R.id.test_wave_btn:
                 switch2activity(TestWaveActivity.class);
                 break;
-//            case R.id.button8:
-//                switch2activity(TestNavigationViewActivity.class);
-//                break;
+            case R.id.test_cicle_wave_btn:
+                switch2activity(TestCustomCircleWaveActivity.class);
+                break;
 //            case R.id.button13:
 //                switch2activity(TestCollapsingToolBarLayout.class);
 //                break;
